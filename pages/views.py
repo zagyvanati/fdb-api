@@ -22,10 +22,10 @@ def page_list(request, format=None):
             return JsonResponse(serializer.data, status=status.HTTP_201_CREATED)
 
 @api_view(['GET', 'PUT', 'DELETE'])
-def page_detail(request, id, format=None):
+def page_detail(request, slug, format=None):
 
     try:
-        page = Page.objects.get(pk=id)
+        page = Page.objects.get(slug=slug)
     except Page.DoesNotExist:
         return JsonResponse(status=status.HTTP_404_NOT_FOUND)
 
