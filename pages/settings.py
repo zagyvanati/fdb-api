@@ -121,7 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_ROOT = '/home/fdbapi/fdb-api/collected_static'
+STATIC_ROOT = '/home/fdbapi/fdb-api/static'
 STATIC_URL = 'static/'
 
 # Default primary key field type
