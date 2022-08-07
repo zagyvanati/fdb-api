@@ -4,4 +4,4 @@ from .models import Page
 class PageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Page
-        fields = ['id', 'slug', 'title', 'subtitle', 'content']
+        fields = ['id', 'slug', 'title', 'subtitle', 'content','edited']
