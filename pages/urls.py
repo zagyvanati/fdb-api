@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from pages import views
 from rest_framework.urlpatterns import format_suffix_patterns
 
@@ -24,6 +24,7 @@ urlpatterns = [
     #path('pages/<int:id>', views.page_detail),
     path('pages/<slug>', views.page_detail),
     path('', views.page_list),
+    path('tinymce/',include('tinymce.urls')),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
