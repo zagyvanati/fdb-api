@@ -142,4 +142,6 @@ TINYMCE_DEFAULT_CONFIG = {
     "fullscreen  preview save print | insertfile image media pageembed template anchor codesample | "
     "a11ycheck ltr rtl | showcomments addcomment code",
     "custom_undo_redo_levels": 10,
+    "relative_urls": True,
+    "document_base_url": 'http://fdbapi.pythonanywhere.com/'
 }
